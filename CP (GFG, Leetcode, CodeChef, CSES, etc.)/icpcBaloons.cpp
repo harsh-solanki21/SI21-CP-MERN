@@ -26,21 +26,14 @@ void mainCode() {
         for(int i=0; i<n; i++)
             cin>>a[i];
 
-        int previous = a[0], count = 0;
-        if(a[0] > a[1])
-            count++;
-        for(int i=1; i<n-1; i++) {
-            if(previous < a[i] && a[i] > a[i+1])
-                count++;
-            previous = max(previous,a[i]);
+        for(int i=n-1; i>=0; i--) {
+            if(a[i] <= 7) {
+                cout<<i+1<<endl;
+                break;
+            }
         }
-        if(previous < a[n-1])
-            count++;
-
-        cout<<count<<endl;
          
     }
-        
 
 }
 
