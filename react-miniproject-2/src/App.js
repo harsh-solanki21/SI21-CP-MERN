@@ -1,8 +1,10 @@
 import React from 'react'
+import Final from './tutorial/2-useEffect/final/2-useEffect-cleanup'
+
 function App() {
   return (
     <div className='container'>
-      <h2>Advanced Tutorial</h2>
+      <Final />
     </div>
   )
 }
